@@ -21,7 +21,7 @@ import {
   Settings as SettingsIcon
 } from 'lucide-react';
 
-const apiKey = "AIzaSyD8jVxO267IllmoZHQN15-DtHDokwselOI";
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
 function pcmToWav(pcmData, sampleRate) {
   const numChannels = 1;

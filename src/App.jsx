@@ -128,162 +128,162 @@ const mockLevels = [
   {
     id: 1,
     ENGLISH: {
-      character: 'SECURITY GUARD',
-      clue: 'I locked the doors at 5 PM, but I heard someone in the hallway.',
-      question: 'Where did the guard hear someone?',
-      choices: ['In the Cafeteria', 'In the hallway', 'In the library']
+      character: 'THE JANITOR',
+      clue: 'I was cleaning the hallway early this morning. I saw the Golden Trophy in the display case near the office. Everything looked normal at that time. I finished cleaning around 7:00 AM. After that, I went to the storage room to get more supplies.',
+      question: 'Where did the janitor see the trophy?',
+      choices: ['In the storage room', 'In the display case near the office', 'In the classroom']
     },
     TAGALOG: {
-      character: 'GUWARDIYA',
-      clue: 'Ni-lock ko ang mga pinto ng 5 PM, pero may narinig akong tao sa pasilyo.',
-      question: 'Saan may narinig ang guwardiya?',
-      choices: ['Sa Cafeteria', 'Sa pasilyo', 'Sa aklatan']
+      character: 'ANG JANITOR',
+      clue: 'Naglilinis ako ng hallway kaninang madaling araw. Nakita ko ang Golden Trophy sa display case malapit sa opisina. Mukhang normal naman ang lahat noon. Natapos akong maglinis bandang 7:00 AM. Pagkatapos nun, pumunta ako sa storage room para kumuha ng iba pang gamit.',
+      question: 'Saan nakita ng janitor ang trophy?',
+      choices: ['Sa storage room', 'Sa display case malapit sa opisina', 'Sa classroom']
     },
     correct: 1
   },
   {
     id: 2,
     ENGLISH: {
-      character: 'STUDENT',
-      clue: 'I left my favorite book where we eat lunch.',
-      question: 'Where should we look?',
-      choices: ['Cafeteria', 'Playground', 'Music Room']
+      character: 'A STUDENT',
+      clue: 'I was practicing for the school program in the auditorium at 8:00 AM. I walked past the office and noticed the display case was empty. I thought maybe the teachers moved the trophy for the celebration.',
+      question: 'What did the student notice?',
+      choices: ['The trophy was shining', 'The display case was empty', 'The janitor was cleaning']
     },
     TAGALOG: {
-      character: 'ESTUDYANTE',
-      clue: 'Naiwan ko ang paborito kong libro kung saan tayo kumakain ng tanghalian.',
-      question: 'Saan tayo dapat maghanap?',
-      choices: ['Kafeteria', 'Palaruan', 'Silid Musika']
+      character: 'ISANG ESTUDYANTE',
+      clue: 'Nagpapraktis ako para sa programa ng paaralan sa auditorium noong 8:00 AM. Dumaan ako sa opisina at napansin kong walang laman ang display case. Akala ko siguro inilipat ng mga guro ang trophy para sa pagdiriwang.',
+      question: 'Ano ang napansin ng estudyante?',
+      choices: ['Kumikinang ang trophy', 'Walang laman ang display case', 'Naglilinis ang janitor']
     },
-    correct: 0
+    correct: 1
   },
   {
     id: 3,
     ENGLISH: {
-      character: 'GROUNDSKEEPER',
-      clue: 'There are muddy footprints leading to the swings!',
-      question: 'Follow the footprints to the...',
-      choices: ['Classroom', 'Office', 'Playground']
+      character: 'THE TEACHER',
+      clue: 'I remember asking two students to help me decorate the stage. We needed space for the awards table. I told them to carefully carry some items from the hallway.',
+      question: 'Why did the teacher ask students for help?',
+      choices: ['To clean the classroom', 'To decorate the stage', 'To open the library']
     },
     TAGALOG: {
-      character: 'HARDINERO',
-      clue: 'May mga maputik na bakas ng paa papunta sa mga duyan!',
-      question: 'Sundan ang mga bakas ng paa papunta sa...',
-      choices: ['Silid-aralan', 'Opisina', 'Palaruan']
+      character: 'ANG GURO',
+      clue: 'Naalala ko na humingi ako ng tulong sa dalawang estudyante para mag-ayos ng stage. Kailangan namin ng espasyo para sa mesa ng parangal. Sinabihan ko silang mag-ingat sa pagbuhat ng ilang gamit mula sa hallway.',
+      question: 'Bakit humingi ng tulong ang guro sa mga estudyante?',
+      choices: ['Para linisin ang classroom', 'Para ayusin ang stage', 'Para buksan ang library']
     },
-    correct: 2
+    correct: 1
   },
   {
     id: 4,
     ENGLISH: {
-      character: 'TEACHER',
-      clue: 'We heard a loud barking sound near the benches.',
-      question: 'Where is the lost puppy?',
-      choices: ['Library', 'Courtyard', 'Art Room']
+      character: 'A STUDENT HELPER',
+      clue: 'I helped carry some boxes and decorations. My friend carried something shiny from the hallway. I think it was the trophy. We brought everything near the art room.',
+      question: 'Where did the students bring the shiny object?',
+      choices: ['The library', 'The art room', 'The cafeteria']
     },
     TAGALOG: {
-      character: 'GURO',
-      clue: 'May narinig kaming malakas na tahol malapit sa mga upuan.',
-      question: 'Nasaan ang nawawalang tuta?',
-      choices: ['Aklatan', 'Bakuran', 'Silid Sining']
+      character: 'ESTUDYANTENG TUMUTULONG',
+      clue: 'Tumulong akong magbuhat ng ilang kahon at dekorasyon. Ang kaibigan ko ay may binuhat na makintab mula sa hallway. Tingin ko iyon ang trophy. Dinala namin ang lahat malapit sa art room.',
+      question: 'Saan dinala ng mga estudyante ang makintab na bagay?',
+      choices: ['Sa library', 'Sa art room', 'Sa cafeteria']
     },
     correct: 1
   },
   {
     id: 5,
     ENGLISH: {
-      character: 'ART TEACHER',
-      clue: 'Someone left red and blue paint splatters on the floor.',
-      question: 'Where did the missing paintbrush go?',
-      choices: ['Art Room', 'Math Class', 'Gym']
+      character: 'THE ART TEACHER',
+      clue: 'I was preparing paint and posters in the art room this morning. I saw students placing decorations inside a cabinet to keep them safe. The cabinet is tall and brown.',
+      question: 'Where were the decorations placed?',
+      choices: ['Inside a cabinet', 'Under the table', 'On the floor']
     },
     TAGALOG: {
       character: 'GURO SA SINING',
-      clue: 'May nag-iwan ng talsik ng pula at asul na pintura sa sahig.',
-      question: 'Saan napunta ang nawawalang pinsel?',
-      choices: ['Silid Sining', 'Klase sa Math', 'Gym']
+      clue: 'Naghahanda ako ng pintura at mga poster sa art room kaninang umaga. Nakita ko ang mga estudyanteng inilalagay ang mga dekorasyon sa loob ng isang cabinet. Ang cabinet ay mataas at kulay brown.',
+      question: 'Saan inilagay ang mga dekorasyon?',
+      choices: ['Sa loob ng cabinet', 'Sa ilalim ng mesa', 'Sa sahig']
     },
     correct: 0
   },
   {
     id: 6,
     ENGLISH: {
-      character: 'COACH',
-      clue: 'I hear a loud whistle and bouncing sounds!',
-      question: 'Where is the missing basketball?',
-      choices: ['Music Room', 'Gym', "Principal's Office"]
+      character: 'THE SCHOOL GUARD',
+      clue: 'I was guarding the school gate since 6:30 AM. I did not see anyone leave the school carrying a trophy. Everyone who entered and left had small bags only.',
+      question: 'What did the guard NOT see?',
+      choices: ['A student running', 'Someone carrying a trophy outside', 'A teacher decorating']
     },
     TAGALOG: {
-      character: 'COACH',
-      clue: 'Nakakarinig ako ng malakas na pito at mga tunog ng talbog!',
-      question: 'Nasaan ang nawawalang bola ng basketball?',
-      choices: ['Silid Musika', 'Gym', 'Opisina ng Prinsipal']
+      character: 'ANG GUWARDIYA',
+      clue: 'Nagbabantay ako sa gate ng paaralan mula 6:30 AM. Wala akong nakitang lumabas ng paaralan na may dalang trophy. Ang lahat ng pumasok at lumabas ay may maliliit na bag lamang.',
+      question: 'Ano ang HINDI nakita ng guwardiya?',
+      choices: ['Isang estudyanteng tumatakbo', 'May nagdadala ng trophy sa labas', 'Isang guro na nag-aayos']
     },
     correct: 1
   },
   {
     id: 7,
     ENGLISH: {
-      character: 'LUNCH LADY',
-      clue: 'It smells like sweet, fresh cookies in here...',
-      question: 'Where is the missing cookie jar?',
-      choices: ['Nurse', 'Kitchen', 'Sandbox']
+      character: 'THE LIBRARIAN',
+      clue: 'I opened the library at 7:30 AM. Some students came in to print posters. They talked about helping decorate the stage. They looked busy but not worried.',
+      question: 'What were the students doing in the library?',
+      choices: ['Printing posters', 'Hiding the trophy', 'Eating snacks']
     },
     TAGALOG: {
-      character: 'KUSINERA',
-      clue: 'Amoy matamis at sariwang cookies dito...',
-      question: 'Nasaan ang nawawalang garapon ng cookies?',
-      choices: ['Nars', 'Kusina', 'Sandbox']
-    },
-    correct: 1
-  },
-  {
-    id: 8,
-    ENGLISH: {
-      character: 'LIBRARIAN',
-      clue: 'There are so many tall shelves filled with stories.',
-      question: 'Where did the teacher leave her glasses?',
-      choices: ['Library', 'Gym', 'Bus Stop']
-    },
-    TAGALOG: {
-      character: 'LIBRARIAN',
-      clue: 'Ang daming matataas na istante na puno ng mga kwento.',
-      question: 'Saan naiwan ng guro ang kanyang salamin?',
-      choices: ['Aklatan', 'Gym', 'Hintayan ng Bus']
+      character: 'ANG LIBRARIAN',
+      clue: 'Binuksan ko ang library ng 7:30 AM. May mga estudyanteng pumasok para mag-print ng posters. Pinag-usapan nila ang pagtulong sa pag-aayos ng stage. Mukha silang abala pero hindi nag-aalala.',
+      question: 'Ano ang ginagawa ng mga estudyante sa library?',
+      choices: ['Nagpi-print ng posters', 'Tinatago ang trophy', 'Kumakain ng meryenda']
     },
     correct: 0
   },
   {
-    id: 9,
+    id: 8,
     ENGLISH: {
-      character: 'MUSIC TEACHER',
-      clue: 'Crash! Bang! Someone is practicing the drums.',
-      question: 'Where are the missing drumsticks?',
-      choices: ['Cafeteria', 'Music Room', 'Office']
+      character: 'THE JANITOR',
+      clue: 'Later that morning, I cleaned near the art room. I noticed the cabinet door was slightly open. I did not check inside because I was in a hurry.',
+      question: 'What did the janitor notice near the art room?',
+      choices: ['A broken window', 'An open cabinet door', 'A missing chair']
     },
     TAGALOG: {
-      character: 'GURO SA MUSIKA',
-      clue: 'Crash! Bang! May nag-eensayo sa tambol.',
-      question: 'Nasaan ang mga nawawalang drumstick?',
-      choices: ['Kafeteria', 'Silid Musika', 'Opisina']
+      character: 'ANG JANITOR',
+      clue: 'Kinalaunan nang umagang iyon, naglinis ako malapit sa art room. Napansin kong bahagyang nakabukas ang pinto ng cabinet. Hindi ko na tiningnan ang loob dahil nagmamadali ako.',
+      question: 'Ano ang napansin ng janitor malapit sa art room?',
+      choices: ['Isang basag na bintana', 'Isang nakabukas na pinto ng cabinet', 'Isang nawawalang upuan']
+    },
+    correct: 1
+  },
+  {
+    id: 9,
+    ENGLISH: {
+      character: 'THE TEACHER',
+      clue: 'When we finished decorating, I realized we forgot to return some items to the hallway. We were rushing to prepare for the program.',
+      question: 'Why did they forget to return the items?',
+      choices: ['They were tired', 'They were rushing', 'They were confused']
+    },
+    TAGALOG: {
+      character: 'ANG GURO',
+      clue: 'Nang matapos kaming mag-ayos, naisip kong nakalimutan naming ibalik ang ilang gamit sa hallway. Nagmamadali kami na maghanda para sa programa.',
+      question: 'Bakit nila nakalimutang ibalik ang mga gamit?',
+      choices: ['Sila ay pagod', 'Sila ay nagmamadali', 'Sila ay naguguluhan']
     },
     correct: 1
   },
   {
     id: 10,
     ENGLISH: {
-      character: 'PRINCIPAL',
-      clue: 'I see a blackboard and a desk with a shiny red apple.',
-      question: 'Where is the golden star sticker?',
-      choices: ['Playground', 'Gym', 'Classroom']
+      character: 'FINAL CLUE',
+      clue: 'After checking all the clues, we opened the tall brown cabinet in the art room. Inside, we found the Golden Trophy safe and shiny. It was placed there by mistake during decoration.',
+      question: 'Where was the trophy found?',
+      choices: ['In the art room cabinet', 'At the school gate', 'In the library']
     },
     TAGALOG: {
-      character: 'PRINSIPAL',
-      clue: 'May nakikita akong pisara at isang mesa na may makintab na pulang mansanas.',
-      question: 'Nasaan ang gintong star sticker?',
-      choices: ['Palaruan', 'Gym', 'Silid-aralan']
+      character: 'HULING PAHIWATIG',
+      clue: 'Pagkatapos suriin ang lahat ng pahiwatig, binuksan namin ang mataas na kulay brown na cabinet sa art room. Sa loob, natagpuan namin ang Golden Trophy na ligtas at makintab. Inilagay ito roon nang hindi sinasadya habang nag-aayos.',
+      question: 'Saan natagpuan ang trophy?',
+      choices: ['Sa cabinet ng art room', 'Sa gate ng paaralan', 'Sa library']
     },
-    correct: 2
+    correct: 0
   }
 ];
 
@@ -421,6 +421,7 @@ export default function App() {
     if (window.speechSynthesis) window.speechSynthesis.cancel();
 
     const data = getLevelData();
+    const characterName = data.character || 'Detective';
     const textToSpeak = `${data.clue} ... ${data.question}`;
     const cacheKey = `${currentLevel}-${settings.lang}`;
 
@@ -436,8 +437,8 @@ export default function App() {
 
     try {
       const promptText = settings.lang === 'TAGALOG' 
-        ? `Read this Tagalog text cheerfully: ${textToSpeak}` 
-        : `Say cheerfully: ${textToSpeak}`;
+        ? `You are voice acting as ${characterName}. Read this text in fluent native Tagalog with proper emotion, intonations, and character voice. Make sure your pronunciation is completely accurate for a native Filipino Tagalog speaker, avoiding any English accent: "${textToSpeak}"` 
+        : `You are voice acting as ${characterName}. Speak this text naturally and cheerfully, conveying the character's persona: "${textToSpeak}"`;
 
       const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`, {
         method: 'POST',
@@ -490,6 +491,7 @@ export default function App() {
         fallbackSpeech(textToSpeak, settings.voice, settings.lang);
       }
     } catch (error) {
+      console.error("TTS API Error falling back to browser synthesis:", error);
       fallbackSpeech(textToSpeak, settings.voice, settings.lang);
     } finally {
       setIsAudioLoading(false);
@@ -881,19 +883,19 @@ export default function App() {
             </div>
 
             <div className="flex-1 mt-5 flex flex-col relative z-0">
-              <div className="bg-white border-[4px] border-[#81c784] rounded-3xl p-5 relative shadow-[0_0_0_3px_#4caf50]">
-                <div className="flex items-center gap-3 mb-3 text-[#2e7d32]">
+              <div className="bg-white border-[4px] border-[#81c784] rounded-3xl p-4 relative shadow-[0_0_0_3px_#4caf50] max-h-48 overflow-y-auto shrink-0 flex flex-col custom-scrollbar">
+                <div className="flex items-center gap-3 mb-3 text-[#2e7d32] shrink-0">
                   <div className="bg-white border-[3px] border-[#ffca28] p-1.5 rounded-full shadow-sm">
-                     <User className="w-6 h-6 text-[#ffb300]" />
+                     <User className="w-5 h-5 text-[#ffb300]" />
                   </div>
-                  <span className="text-[13px] tracking-wide uppercase">{levelData.character}</span>
+                  <span className="text-[12px] tracking-wide uppercase">{levelData.character}</span>
                 </div>
-                <p className="text-[14px] leading-relaxed text-[#000000]">
+                <p className="text-[13px] leading-relaxed text-[#000000] shrink-0 pb-1">
                   "{levelData.clue}"
                 </p>
               </div>
 
-              <div className="flex justify-center my-6">
+              <div className="flex justify-center my-4 shrink-0">
                 <button
                   onClick={playCurrentClue}
                   disabled={isAudioLoading}

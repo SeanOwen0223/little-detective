@@ -995,9 +995,27 @@ export default function App() {
                 </div>
                 <p className="text-[15px] mb-6 text-gray-700">{t('greatJob')}</p>
 
-                <div className="w-48 h-32 border-[6px] border-[#90caf9] rounded-2xl mb-8 flex items-center justify-center bg-[#e3f2fd] relative overflow-hidden shadow-inner">
-                   <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle, #2196f3 2px, transparent 2px)', backgroundSize: '16px 16px' }}></div>
-                   <Trophy className="w-20 h-20 fill-[#ffca28] text-[#f57f17] relative z-10 drop-shadow-md" />
+                <div className="flex flex-col items-center w-full">
+                  <div className="text-sm font-bold text-[#e65100] mb-3 uppercase tracking-wide bg-[#ffe082] px-4 py-1.5 rounded-full border-[3px] border-[#ffb300] shadow-sm flex items-center gap-2">
+                    <Puzzle className="w-4 h-4" />
+                    {completedLevels.length < 10 ? `Trophy Pieces: ${completedLevels.length}/10` : 'Trophy Complete!'}
+                  </div>
+                  <div className="w-48 h-32 border-[6px] border-[#90caf9] rounded-2xl mb-8 flex items-center justify-center bg-[#e3f2fd] relative overflow-hidden shadow-inner">
+                     <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle, #2196f3 2px, transparent 2px)', backgroundSize: '16px 16px' }}></div>
+                     
+                     <div className="relative w-24 h-24 z-10 flex items-center justify-center">
+                       {/* Empty silhouette representing missing pieces */}
+                       <Trophy className="w-24 h-24 text-[#b0bec5] absolute opacity-50" />
+                       
+                       {/* The pieced-together trophy */}
+                       <div 
+                         className="absolute top-0 left-0 w-24 h-24 overflow-hidden transition-all duration-1000"
+                         style={{ clipPath: `inset(${100 - (completedLevels.length * 10)}% 0 0 0)` }}
+                       >
+                         <Trophy className="w-24 h-24 fill-[#ffca28] text-[#f57f17] drop-shadow-md absolute top-0 left-0" />
+                       </div>
+                     </div>
+                  </div>
                 </div>
 
                 <div className="flex justify-between w-full gap-3 mt-auto">
